@@ -1,4 +1,4 @@
-/*stylesheet*/
+/*stylesheet */
 :root
 {
  --background-color: #DCDCDC;
@@ -8,7 +8,7 @@
 
 body
 {
-  background-color: var(--background-color);
+  background: var(--background-color);
   text-align: left;
   margin: 0;
   color: var(--body-color);
@@ -25,7 +25,7 @@ body
   margin-top: 0;
 }
 
-#masthead /* ID element. this particular id can be used only one time (unique) 
+#masthead /* ID element. this particular id can be used only one time (unique)
 {
   background-color: var(--body-color);
   padding: 1em;
@@ -50,11 +50,31 @@ h1, h2, h3, h4, p
   font-weight: bold;
   font-family: 'Indie Flower';
 }
-h1, h2
+h1
 {
-  font-weight: 700;
-  /*font-size: 48px;*/
+  font-weight: bold;
+  font-size: 40px;
 }
+
+h2
+{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h3
+{
+  font-weight: normal;
+  font-size: 20px;
+}
+
+h4
+{
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+}
+
 
 #wrapper
 {
@@ -103,6 +123,8 @@ h1, h2
 
 #topnav ul {
   display: flex;
+  background-color: var(--body-color);
+  color: #FFFFFF;
 }
 
 #topnav li {
@@ -120,7 +142,7 @@ h1, h2
 
 #topnav li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 /* INTRO */
@@ -201,7 +223,7 @@ h1, h2
     padding: 0 4px;
     color: var(--background-color);
     display: inline-block;
-    background-color: var(--body-color);
+    background: var(--background-color);
   }
 
   .page-item h2 a {
@@ -224,13 +246,19 @@ h1, h2
   /*FOOTER*/
 
   #footer {
+    background: var(--body-color);
     padding: 2em;
+    font-weight: bold;
     text-align: center;
-    font-size: .85rem;
+    color: #FFFFFF;
   }
+
 
   #footer p:last-child {
     margin-bottom: 0;
+    background: var(--body-color);
+    text-align: center;
+    color: #FFFFFF
   }
 
   /*RESPONSIVE*/
@@ -261,7 +289,7 @@ h1, h2
     }
 
     #intro {
-      height: 70vh;
+      height: 50vh;
     }
 
     #intro-holder {
