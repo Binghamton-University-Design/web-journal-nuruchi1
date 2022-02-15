@@ -1,17 +1,17 @@
 /*stylesheet */
 :root
 {
- --background-color: #DCDCDC;
- --body-color: #111111;
+ --background-color: #222831;
+ --body-color: #393e46;
 }
 
 
 body
 {
-  background: var(--background-color);
+  background-color: var(--background-color);
   text-align: left;
   margin: 0;
-  color: var(--body-color);
+  color: #eee;
   font-family: 'Indie Flower';
   font-weight: 300;
   line-height: 1.6;
@@ -19,36 +19,17 @@ body
   height: 100%;
   position: relative;
 }
-/*
-.thumb-box h3, .box h3
-{
-  margin-top: 0;
-}
 
-#masthead /* ID element. this particular id can be used only one time (unique)
-{
-  background-color: var(--body-color);
-  padding: 1em;
-  text-align: right;
-  margin-bottom: 2rem;
-}
-
-#footer
-{
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  font-size: 1em;
-  background-color: var(--body-color);
-  margin-top: 1rem;
-}
-*/
 h1, h2, h3, h4, p
 {
   margin-top 0;
   margin-bottom: 1em;
   font-weight: bold;
   font-family: 'Indie Flower';
+}
+b
+{
+  font-family: 'Fanwood Text', serif;
 }
 h1
 {
@@ -124,7 +105,7 @@ h4
 #topnav ul {
   display: flex;
   background-color: var(--body-color);
-  color: #FFFFFF;
+  color: #eee;
 }
 
 #topnav li {
@@ -143,6 +124,7 @@ h4
 #topnav li a {
   text-decoration: none;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 /* INTRO */
@@ -169,7 +151,7 @@ h4
   }
 
   .work-item .inner .work-inside {
-    color: #fff;
+    color: #eee;
     padding: 2rem;
     width: 100%;
     background-color: var(--body-color);
@@ -223,7 +205,7 @@ h4
     padding: 0 4px;
     color: var(--background-color);
     display: inline-block;
-    background: var(--background-color);
+    background-color:: var(--background-color);
   }
 
   .page-item h2 a {
@@ -246,19 +228,23 @@ h4
   /*FOOTER*/
 
   #footer {
-    background: var(--body-color);
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: var(--body-color);
+    color: #eee;
+    margin-top: 1rem;
     padding: 2em;
     font-weight: bold;
-    text-align: center;
-    color: #FFFFFF;
   }
 
 
   #footer p:last-child {
     margin-bottom: 0;
-    background: var(--body-color);
+    background-color: var(--body-color);
     text-align: center;
-    color: #FFFFFF
+    color: #eee;
   }
 
   /*RESPONSIVE*/
@@ -273,7 +259,8 @@ h4
   @media all and (max-width: 699px) {
 
     #intro-holder h1 {
-      font-size: 2.2rem
+      text-align: center;
+      font-size: 2.2rem;
     }
 
     .work-item .inner .work-inside {
@@ -302,22 +289,5 @@ h4
 
   }
 /*
-h3
-{
-  font-size: 1.50em;
-}
-
 .alternate classes can be used in multiple places ie. cars belong to class but the licence plate is the ID element
-{
-  color: #FFFFFF;
-}
-
-h4
-{
-  font-size: 1.25em;
-}
-
-a:hover
-{
-    text-decoration: none;
-}*/
+*/
